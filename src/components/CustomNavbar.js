@@ -8,12 +8,9 @@ export default class CustomNavbar extends Component {
     render() {
         return (
             <Navbar default collapseOnSelect>
-                <Navbar.Header>
-                        <Navbar.Brand>
-                            <Link to="/">WeatherForce</Link>
-                        </Navbar.Brand>
-                    <Navbar.Toggle />
-                </Navbar.Header>
+                <Navbar.Brand href="#home">
+                    <Link to="/">WeatherForce</Link>
+                </Navbar.Brand>
                 <Navbar.Collapse>
                     <Nav pullRight>
                         <NavItem eventKey={1} componentClass={Link} to="/">
@@ -33,4 +30,3 @@ export default class CustomNavbar extends Component {
             </Navbar>
         );
     }
-}
